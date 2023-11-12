@@ -1,0 +1,100 @@
+@charset "UTF_8";
+
+@font-face {
+    font-family: 'PassionOne-Regular';
+    src: url("../fontes/PassionOne-Regular.ttf") format('opentype');
+}
+@font-face {
+    font-family: 'Sriracha-Regular';
+    src: url("../fontes/Sriracha-Regular.ttf") format('opentype');
+}
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: PassionOne-Regular;
+    --font3: Sriracha-Regular;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font3);
+}
+html, body{
+    min-width: 100vh;
+    background-color: darkgrey;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 10vw;
+}
+header > p{
+    padding-bottom: 50px;
+    font-family: var(--font1);
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: var(--font1);
+}
+header a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3vw;
+}
+
+section > p{
+    padding-bottom: 3em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: cornflowerblue;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.64);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.67);
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+section#imagem01{
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+
+}
+section#imagem02{
+    background-image: url("../imagens/background002.jpg");
+    background-position: right center;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer > p{
+    font-family: var(--font1);
+}
